@@ -603,5 +603,16 @@ button div {
   align-items: flex-start;
   align-self: stretch;
   border-radius: 4px;
-  border: 1px solid var(--Neutrals-100, #CBD5E1);
+  border: 1px solid var(--Neutrals-100, #cbd5e1);
+}
+
+.reg-label {
+  color: var(--Blue-100, #334154);
+
+  /* Body Text 2 (Med) */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
