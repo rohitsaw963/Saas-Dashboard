@@ -194,19 +194,21 @@
                 </div>
                 <!------------------------------- Form- section  ------------->
                 <div class="form-details">
-                  <!------------------------------- Form- name ------------->git 
+                  <!------------------------------- Form- name ------------->
 
                   <div class="form-name"><span>Form name</span></div>
                   <div>
                     <textarea
                       name=""
                       class="form-name-text"
-                      id=""
+                      id="myTextarea"
                       cols="116"
                       rows="1"
+                      maxlength="250"
                       placeholder="New Event Registration Form"
                     ></textarea>
-                  </div>
+                    <span id="wordCount">0</span><span>/</span> <span id="charRemaining">250</span>
+                    </div>
                   <div class="form-Description">
                     <span>Form Description</span>
                   </div>
@@ -214,7 +216,7 @@
                     <textarea
                       name=""
                       class="form-dec-text"
-                      id=""
+                      id="fdesc"
                       cols="116"
                       rows="8"
                       placeholder="We are so excited that you want to join! Please tell us a little more about yourself."
@@ -224,13 +226,14 @@
                     <span>Registration Button label</span>
                   </div>
                   <textarea
-                    name=""
+                    name="reg-label"
                     class="reg-lab"
-                    id=""
+                    id="#myTextarea"
                     cols="116"
                     rows="1"
                     placeholder="Register"
                   ></textarea>
+                  <span id="wordCount">0</span>/ <span id="charRemaining">250</span>
                 </div>
                 <!-------------------------------------- FORM-FIELDS ---------->
                 <div class="form-requirements">
@@ -357,7 +360,7 @@
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
