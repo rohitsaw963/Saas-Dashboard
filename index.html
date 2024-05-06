@@ -198,7 +198,19 @@
 
                   <div class="form-name"><span>Form name</span></div>
                   <div>
-                    <textarea
+                    <input
+                      type="text"
+                      class="form-name-text"
+                      id="myTextarea"
+                      cols="116"
+                      rows="1"
+                      maxlength="250"
+                      placeholder="New Event Registration Form"
+                    />
+                    <span id="wordCount">0</span><span>/</span>
+                    <span id="wordRemaining">250</span>
+                  </div>
+                  <!-- <textarea
                       name=""
                       class="form-name-text"
                       id="myTextarea"
@@ -207,33 +219,59 @@
                       maxlength="250"
                       placeholder="New Event Registration Form"
                     ></textarea>
-                    <span id="wordCount">0</span><span>/</span> <span id="charRemaining">250</span>
-                    </div>
+                    <span id="wordCount">0</span><span>/</span> <span id="wordRemaining">250</span> -->
                   <div class="form-Description">
                     <span>Form Description</span>
                   </div>
                   <div>
-                    <textarea
+                    <input
+                      type="text"
                       name=""
                       class="form-dec-text"
                       id="fdesc"
                       cols="116"
                       rows="8"
+                      maxlength="200"
+                      placeholder="We are so excited that you want to join! Please tell us a little more about yourself."
+                    /><span id="wordCount">0</span><span>/</span>
+                    <span id="wordDesc">200</span>
+                  </div>
+                  <!-- <textarea
+                      name=""
+                      class="form-dec-text"
+                      id="fdesc"
+                      cols="116"
+                      rows="8"
+                      maxlength="200"
                       placeholder="We are so excited that you want to join! Please tell us a little more about yourself."
                     ></textarea>
-                  </div>
+                  <span id="wordCount">0</span><span>/</span> <span id="charDesc">200</span> -->
                   <div class="reg-label">
                     <span>Registration Button label</span>
                   </div>
-                  <textarea
-                    name="reg-label"
-                    class="reg-lab"
-                    id="#myTextarea"
-                    cols="116"
-                    rows="1"
-                    placeholder="Register"
-                  ></textarea>
-                  <span id="wordCount">0</span>/ <span id="charRemaining">250</span>
+                  <div>
+                    <input
+                      type="text"
+                      name="reg-label"
+                      class="reg-lab"
+                      id="reg-label"
+                      cols="116"
+                      rows="1"
+                      placeholder="Register"
+                    />
+                    <span id="wordCount">0/</span>
+                    <span id="wordRemaining">250</span>
+                  </div>
+                  <!-- <textarea
+                      name="reg-label"
+                      class="reg-lab"
+                      id="#myTextarea"
+                      cols="116"
+                      rows="1"
+                      placeholder="Register"
+                    ></textarea>
+                    <span id="wordCount">0</span>/
+                    <span id="charRemaining">250</span> -->
                 </div>
                 <!-------------------------------------- FORM-FIELDS ---------->
                 <div class="form-requirements">
@@ -247,111 +285,124 @@
                   <!------------------------------------------- NAME -->
                   <div class="head-name">
                     <div class="left">
-                       <span class="material-symbols-outlined">
-                         menu
-                         </span>
-                       <span>Name</span>
-                     </div>
-                     <div class="right">
-                       <!-- checked -->
-                       <span id="cb"><span class="material-symbols-outlined">
-                         check_box
-                         </span></span>
-                         <div class="ed">
-                           <!-- Edit -->
-                           <span><span class="material-symbols-outlined">
-                             edit
-                           </span></span>
-                           <!-- Delete -->
-                           <span><span class="material-symbols-outlined">
-                             delete
-                           </span></span>
-                         </div>
-                     </div>
-                   </div>
-                   <!------------------------------------ Email -->
-                   <div class="head-name">
-                    <div class="left">
-                       <span class="material-symbols-outlined">
-                         menu
-                         </span>
-                       <span>E-mail</span>
-                     </div>
-                     <div class="right">
-                       <!-- checked -->
-                       <span id="cb"><span class="material-symbols-outlined">
-                         check_box
-                         </span></span>
-                         <div class="ed">
-                           <!-- Edit -->
-                           <span><span class="material-symbols-outlined">
-                             edit
-                           </span></span>
-                           <!-- Delete -->
-                           <span><span class="material-symbols-outlined">
-                             delete
-                           </span></span>
-                         </div>
-                     </div>
-                   </div>
-                   <!------------------------------------- City -->
-                   <div class="head-name">
-                    <div class="left">
-                       <span class="material-symbols-outlined">
-                         menu
-                         </span>
-                       <span>City</span>
-                     </div>
-                     <div class="right">
-                       <!-- checked -->
-                       <span id="cb"><span class="material-symbols-outlined">
-                         check_box
-                         </span></span>
-                         <div class="ed">
-                           <!-- Edit -->
-                           <span><span class="material-symbols-outlined">
-                             edit
-                           </span></span>
-                           <!-- Delete -->
-                           <span><span class="material-symbols-outlined">
-                             delete
-                           </span></span>
-                         </div>
-                     </div>
-                   </div>
-                   <!----------------------------- Website ---------------->
-                   <div class="head-name">
-                    <div class="left">
-                       <span class="material-symbols-outlined">
-                         menu
-                         </span>
-                       <span>Website</span>
-                     </div>
-                     <div class="right">
-                       <!-- checked -->
-                       <span id="cb"><span class="material-symbols-outlined">
-                         check_box
-                         </span></span>
-                         <div class="ed">
-                           <!-- Edit -->
-                           <span><span class="material-symbols-outlined">
-                             edit
-                           </span></span>
-                           <!-- Delete -->
-                           <span><span class="material-symbols-outlined">
-                             delete
-                           </span></span>
-                         </div>
-                     </div>
-                   </div>
-                  </div>
-                  <div class="add-field">
-                    <div class="add-btn">
-                      <span class="material-symbols-outlined">
-                        add
-                        </span>
-                        <span>Add field</span>
+                      <span class="material-symbols-outlined"> menu </span>
+                      <span>Name</span>
                     </div>
+                    <div class="right">
+                      <!-- checked -->
+                      <span id="cb"
+                        ><span class="material-symbols-outlined">
+                          check_box
+                        </span></span
+                      >
+                      <div class="ed">
+                        <!-- Edit -->
+                        <span
+                          ><span class="material-symbols-outlined">
+                            edit
+                          </span></span
+                        >
+                        <!-- Delete -->
+                        <span
+                          ><span class="material-symbols-outlined">
+                            delete
+                          </span></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!------------------------------------ Email -->
+                  <div class="head-name">
+                    <div class="left">
+                      <span class="material-symbols-outlined"> menu </span>
+                      <span>E-mail</span>
+                    </div>
+                    <div class="right">
+                      <!-- checked -->
+                      <span id="cb"
+                        ><span class="material-symbols-outlined">
+                          check_box
+                        </span></span
+                      >
+                      <div class="ed">
+                        <!-- Edit -->
+                        <span
+                          ><span class="material-symbols-outlined">
+                            edit
+                          </span></span
+                        >
+                        <!-- Delete -->
+                        <span
+                          ><span class="material-symbols-outlined">
+                            delete
+                          </span></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!------------------------------------- City -->
+                  <div class="head-name">
+                    <div class="left">
+                      <span class="material-symbols-outlined"> menu </span>
+                      <span>City</span>
+                    </div>
+                    <div class="right">
+                      <!-- checked -->
+                      <span id="cb"
+                        ><span class="material-symbols-outlined">
+                          check_box
+                        </span></span
+                      >
+                      <div class="ed">
+                        <!-- Edit -->
+                        <span
+                          ><span class="material-symbols-outlined">
+                            edit
+                          </span></span
+                        >
+                        <!-- Delete -->
+                        <span
+                          ><span class="material-symbols-outlined">
+                            delete
+                          </span></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!----------------------------- Website ---------------->
+                  <div class="head-name">
+                    <div class="left">
+                      <span class="material-symbols-outlined"> menu </span>
+                      <span>Website</span>
+                    </div>
+                    <div class="right">
+                      <!-- checked -->
+                      <span id="cb"
+                        ><span class="material-symbols-outlined">
+                          check_box
+                        </span></span
+                      >
+                      <div class="ed">
+                        <!-- Edit -->
+                        <span
+                          ><span class="material-symbols-outlined">
+                            edit
+                          </span></span
+                        >
+                        <!-- Delete -->
+                        <span
+                          ><span class="material-symbols-outlined">
+                            delete
+                          </span></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="add-field">
+                  <div class="add-btn">
+                    <span class="material-symbols-outlined"> add </span>
+                    <span>Add field</span>
                   </div>
                 </div>
               </div>
@@ -360,7 +411,7 @@
         </div>
       </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </body>
 </html>
