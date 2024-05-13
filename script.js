@@ -1,22 +1,21 @@
 //*****-------------------Test
-console.log("This is Saas Dashboard and I am using Jquery");
-
-$(document).ready(function () {
-  $(":input").on("input", function () {
-    var text = $(this).val().trim();
-    var words = text.split(/\s+/);
-    var characters = text.length;
-    $("#wordCount").text(words.length);
-    $("#wordcountDesc").text(words.length);
-    $("#wordcountLabel").text(words.length);
-    $("#wordRemaining").text(250 - characters);
-    $("#wordDesc").text(200 - characters);
-    $("#wordlabelRemaining").text(250 - characters);
-  });
-});
-
-$(document).ready(() => {
-  $(".add-btn :span").click(() => {
-    $(this).add();
-  });
-});
+console.log("This is Saas Dashboard.");
+function countWords() {
+  let inputField = document.getElementById("inputField").value;
+  let wordCount = 0;
+  let words = inputField.split(" ");
+  for (let i = 0; i < words.length; i++) {
+    if (words[i] !== "") {
+      wordCount++;
+    }
+  }
+  if (wordCount > 250) {
+    document.getElementById("wordCount").innerHTML =
+      "Maximum number of words exceeded";
+  } else {
+    document.getElementById("wordCount").innerHTML = wordCount;
+    document.getElementById("wordRemaining").innerHTML = 250 - wordCount;
+  }
+}
+// console.log(wordCount);
+// console.log(wordRemaining);
