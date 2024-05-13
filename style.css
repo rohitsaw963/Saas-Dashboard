@@ -110,9 +110,13 @@ body {
 .home {
   display: flex;
   width: 250px;
-  padding: 0px 20px;
+  padding: 10px 25px;
   align-items: flex-start;
   gap: 10px;
+}
+
+.home span {
+  color: white;
 }
 
 .mid-part-modules {
@@ -140,7 +144,7 @@ span {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  color: var(--Blue-50, #94a3b8);
+  color: var(--Blue-50, #a3a8b0);
 }
 
 .bottom-part {
@@ -373,19 +377,20 @@ button div {
   padding: 10px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
+  gap: 20px;
+}
+.Frame9 span:hover {
+  background-color: #cbd5e1;
 }
 
 #setup {
   color: var(--Primary-Blue-500, #10172a);
 
-  /* Body Text 1 (Semi-Bold) */
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: 20px;
-  /* 142.857% */
 }
 
 .Frame10 {
@@ -650,7 +655,7 @@ button div {
 .frame-head {
   display: flex;
   align-items: center;
-  gap: 540px;
+  gap: 480px;
 }
 #form-f {
   color: var(--Blue-100, #334154);
@@ -689,7 +694,11 @@ button div {
 .right {
   display: flex;
   align-items: center;
-  gap: 128px;
+  gap: 200px;
+}
+.right #scales {
+  height: 24px;
+  width: 24px;
 }
 #cb {
   display: flex;
@@ -721,7 +730,9 @@ button div {
   align-items: center;
   gap: 10px;
 }
-.add-btn span {
-  color: #1e8af3;
+.add-btn button {
   cursor: pointer;
+  font: #0a0b0c;
+  background-color: #ffffff;
+  border: none;
 }

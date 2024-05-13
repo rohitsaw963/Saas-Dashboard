@@ -1,7 +1,7 @@
 //*****-------------------Test
-console.log("This is Saas Dashboard");
+console.log("This is Saas Dashboard and I am using Jquery");
 
-$(document).each(function () {
+$(document).ready(function () {
   $(":input").on("input", function () {
     var text = $(this).val().trim();
     var words = text.split(/\s+/);
@@ -12,5 +12,11 @@ $(document).each(function () {
     $("#wordRemaining").text(250 - characters);
     $("#wordDesc").text(200 - characters);
     $("#wordlabelRemaining").text(250 - characters);
+  });
+});
+
+$(document).ready(() => {
+  $(".add-btn :span").click(() => {
+    $(this).add();
   });
 });

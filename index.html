@@ -48,9 +48,6 @@
               <span class="material-symbols-outlined"> payments </span>Memory
             </div>
             <div class="home">
-              <span class="material-symbols-outlined"> payments </span>Memory
-            </div>
-            <div class="home">
               <span class="material-symbols-outlined"> calendar_month </span
               >Calendar
             </div>
@@ -256,17 +253,18 @@
                   <div class="head-name">
                     <div class="left">
                       <span class="material-symbols-outlined"> menu </span>
-                      <span>Name</span>
+                      <span contenteditable="true" draggable="true">Name</span>
                     </div>
                     <div class="right">
                       <!-- checked -->
-                      <span id="cb"
-                        ><span class="material-symbols-outlined">
-                          check_box
-                        </span></span
-                      >
+                      <input
+                        type="checkbox"
+                        id="scales"
+                        name="scales"
+                        checked
+                      />
+                      <!-- Edit -->
                       <div class="ed">
-                        <!-- Edit -->
                         <span
                           ><span class="material-symbols-outlined">
                             edit
@@ -285,15 +283,18 @@
                   <div class="head-name">
                     <div class="left">
                       <span class="material-symbols-outlined"> menu </span>
-                      <span>E-mail</span>
+                      <span contenteditable="true" draggable="true"
+                        >E-mail</span
+                      >
                     </div>
                     <div class="right">
                       <!-- checked -->
-                      <span id="cb"
-                        ><span class="material-symbols-outlined">
-                          check_box
-                        </span></span
-                      >
+                      <input
+                        type="checkbox"
+                        id="scales"
+                        name="scales"
+                        checked
+                      />
                       <div class="ed">
                         <!-- Edit -->
                         <span
@@ -314,15 +315,16 @@
                   <div class="head-name">
                     <div class="left">
                       <span class="material-symbols-outlined"> menu </span>
-                      <span>City</span>
+                      <span contenteditable="true" draggable="true">City</span>
                     </div>
                     <div class="right">
                       <!-- checked -->
-                      <span id="cb"
-                        ><span class="material-symbols-outlined">
-                          check_box
-                        </span></span
-                      >
+                      <input
+                        type="checkbox"
+                        id="scales"
+                        name="scales"
+                        checked
+                      />
                       <div class="ed">
                         <!-- Edit -->
                         <span
@@ -343,15 +345,18 @@
                   <div class="head-name">
                     <div class="left">
                       <span class="material-symbols-outlined"> menu </span>
-                      <span>Website</span>
+                      <span contenteditable="true" draggable="true"
+                        >Website</span
+                      >
                     </div>
                     <div class="right">
                       <!-- checked -->
-                      <span id="cb"
-                        ><span class="material-symbols-outlined">
-                          check_box
-                        </span></span
-                      >
+                      <input
+                        type="checkbox"
+                        id="scales"
+                        name="scales"
+                        checked
+                      />
                       <div class="ed">
                         <!-- Edit -->
                         <span
@@ -371,8 +376,10 @@
                 </div>
                 <div class="add-field">
                   <div class="add-btn">
-                    <span class="material-symbols-outlined"> add </span>
-                    <span>Add field</span>
+                    <button>
+                      <span class="material-symbols-outlined"> add </span>
+                      <span>Add field</span>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -381,10 +388,11 @@
         </div>
       </div>
     </div>
-    <script
-      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
-      type="text/javascript"
-    ></script>
-    <script src="script.js"></script>
   </body>
+  <script src="script.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+    crossorigin="anonymous"
+  ></script>
 </html>
