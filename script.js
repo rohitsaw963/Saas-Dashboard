@@ -1,21 +1,39 @@
 //*****-------------------Test
 console.log("This is Saas Dashboard.");
-function countWords() {
-  let inputField = document.getElementById("inputField").value;
+
+function countWords(inputField, maxWords) {
+  let inputValue = inputField.value;
   let wordCount = 0;
-  let words = inputField.split(" ");
+  let words = inputValue.split(" ");
+
   for (let i = 0; i < words.length; i++) {
     if (words[i] !== "") {
       wordCount++;
     }
   }
-  if (wordCount > 250) {
-    document.getElementById("wordCount").innerHTML =
-      "Maximum number of words exceeded";
+
+  let wordCountSpan, wordRemainingSpan;
+
+  switch (inputField.id) {
+    case "inputFieldName":
+      wordCountSpan = document.getElementById("wordCountName");
+      wordRemainingSpan = document.getElementById("wordRemainingName");
+      break;
+    case "inputFieldDescription":
+      wordCountSpan = document.getElementById("wordCountDescription");
+      wordRemainingSpan = document.getElementById("wordRemainingDescription");
+      break;
+    case "inputFieldLabel":
+      wordCountSpan = document.getElementById("wordCountLabel");
+      wordRemainingSpan = document.getElementById("wordRemainingLabel");
+      break;
+  }
+
+  if (wordCount > maxWords) {
+    wordCountSpan.innerHTML = "Maximum number of words exceeded";
+    wordRemainingSpan.innerHTML = "";
   } else {
-    document.getElementById("wordCount").innerHTML = wordCount;
-    document.getElementById("wordRemaining").innerHTML = 250 - wordCount;
+    wordCountSpan.innerHTML = wordCount;
+    wordRemainingSpan.innerHTML = maxWords - wordCount;
   }
 }
-// console.log(wordCount);
-// console.log(wordRemaining);

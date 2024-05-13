@@ -198,15 +198,15 @@
                     <input
                       type="text"
                       class="form-name-text"
-                      id="inputField"
+                      id="inputFieldName"
                       cols="116"
                       rows="1"
                       maxlength="250"
-                      onkeyup="countWords()"
+                      onkeyup="countWords(this, 250)"
                       placeholder="New Event Registration Form"
                     />
-                    <span id="wordCount">0</span><span>/</span>
-                    <span id="wordRemaining">250</span>
+                    <span id="wordCountName">0</span><span>/</span>
+                    <span id="wordRemainingName">250</span>
                   </div>
                   <div class="form-Description">
                     <span>Form Description</span>
@@ -216,14 +216,14 @@
                       type="text"
                       name=""
                       class="form-dec-text"
-                      id="inputField"
+                      id="inputFieldDescription"
                       cols="116"
                       rows="8"
                       maxlength="200"
-                      onkeyup="countWords()"
+                      onkeyup="countWords(this, 200)"
                       placeholder="We are so excited that you want to join! Please tell us a little more about yourself."
-                    /><span id="wordCount">0</span><span>/</span>
-                    <span id="wordRemaining">200</span>
+                    /><span id="wordCountDescription">0</span><span>/</span>
+                    <span id="wordRemainingDescription">200</span>
                   </div>
                   <div class="reg-label">
                     <span>Registration Button label</span>
@@ -233,14 +233,14 @@
                       type="text"
                       name="reg-label"
                       class="reg-lab"
-                      id="inputField"
+                      id="inputFieldLabel"
                       cols="116"
                       rows="1"
-                      onkeyup="countWords()"
+                      onkeyup="countWords(this, 250)"
                       placeholder="Register"
                     />
-                    <span id="wordCount">0/</span>
-                    <span id="wordRemaining">250</span>
+                    <span id="wordCountLabel">0</span><span>/</span>
+                    <span id="wordRemainingLabel">250</span>
                   </div>
                 </div>
                 <!-------------------------------------- FORM-FIELDS ---------->
